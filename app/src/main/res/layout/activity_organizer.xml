@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/dark_bg"
+    android:padding="24dp"
+    android:gravity="center_horizontal">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="40dp"
+        app:cardCornerRadius="70dp"
+        app:cardElevation="10dp"
+        app:cardBackgroundColor="@color/card_bg">
+
+        <ImageView
+            android:id="@+id/imgOrganizer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/admin_logo" /> </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tvOrgTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Events Management Co."
+        android:textColor="@color/accent_gold"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Premium Event Organizer"
+        android:textColor="@color/text_grey"
+        android:textSize="16sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp">
+
+        <Button
+            android:id="@+id/btnCall"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="📞 Call Now (+91 6354771762)"
+            android:backgroundTint="@color/accent_gold"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="15dp"
+            app:cornerRadius="12dp"/>
+
+        <Button
+            android:id="@+id/btnMessage"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="💬 Message on WhatsApp"
+            android:backgroundTint="@color/nav_bg"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:cornerRadius="12dp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnBackOrg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:backgroundTint="#333333"
+        android:layout_marginTop="40dp"
+        app:cornerRadius="20dp"/>
+
+</LinearLayout>

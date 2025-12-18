@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_bg"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/tvTicketHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Digital Ticket 🎟️"
+        android:textColor="@color/accent_gold"
+        android:textSize="22sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:id="@+id/ticketCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTicketHeader"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ticket_bg"
+        android:orientation="vertical"
+        android:elevation="10dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/ivTicketEvent"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:scaleType="centerCrop"
+            app:shapeAppearanceOverlay="@style/RoundedTopCorners"
+            tools:src="@drawable/sunburn_banner" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/tvTicketEventName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Event Name"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tvTicketStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Status: CONFIRMED"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#EEEEEE"
+                android:layout_marginVertical="15dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tvTicketDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="📅 Date"
+                    android:textColor="#666666"/>
+                <TextView
+                    android:id="@+id/tvTicketPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="Paid: ₹0"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="----------------------------"
+                android:gravity="center"
+                android:textColor="#DDDDDD"
+                android:layout_marginTop="20dp"/>
+
+            <ImageView
+                android:id="@+id/imgTicketQr"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="#F9F9F9"
+                android:padding="5dp"
+                android:src="@drawable/admin_logo"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Scan this at the entry"
+                android:layout_gravity="center"
+                android:textSize="11sp"
+                android:layout_marginTop="5dp"
+                android:textColor="#999999"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnBackToHome"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:text="Download Ticket ⬇️"
+        android:backgroundTint="@color/accent_gold"
+        android:textColor="@color/black"
+        app:cornerRadius="12dp"
+        android:layout_marginBottom="10dp"/>
+
+</RelativeLayout>
