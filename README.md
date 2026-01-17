@@ -5,8 +5,8 @@ This is a Mobile Application developed as part of the Mobile Application Develop
 The app helps users manage and organize events efficiently.
 
 ## 🎨 UI / UX Design (Figma)
-- [Figma Design – Click Here](https://www.figma.com/design/DNSovHswkfJDyLqVo2a1ly/Event-Management?node-id=0-1)
-- [Wireframes – Click Here](https://www.figma.com/design/VsbSyPckyNu3qUfp9lnTUv/wireframes?node-id=0-1)
+- [Figma Design – Click Here](https://www.figma.com/design/DNSovHswkFJDyLqVo2a11y/Event-Management?node-id=0-1&t=26XM5kmJPQA8JTxT-1)
+- [Wireframes – Click Here](https://www.figma.com/design/VsbSyPckyNu3qUfp91nTUv/wireframes?node-id=0-1&t=YU0ZqzCQhrquXmq4-1)
 
 ## 🛠️ Tech Stack
 - Java
